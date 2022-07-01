@@ -1,7 +1,9 @@
+
 <script>
 	import LifeGrid from "./components/LifeGrid.svelte"
 	export let name;
 </script>
+
 
 <main>
 	<h1>Hello {name}!</h1>

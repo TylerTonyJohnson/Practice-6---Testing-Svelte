@@ -1,10 +1,16 @@
 <script>
+    export let id;
+
+    const handleMouseEnter = () => {
+        console.log(id);
+    }
 
 </script>
 
-<week-slot>
-    <week/>
+<week-slot on:mouseenter={handleMouseEnter}>
+    <week {id}/>
 </week-slot>
+
 
 <style>
     week-slot {
@@ -14,19 +20,19 @@
     }
 
     week {
+        flex: 1;
         left: 4px;
         top: 4px;
         margin: 8px;
         display: inline-block;
-        width: 20px;
         border: solid black 1px;
-        background-color: blue;
+        background-color: gray;
         border-radius: 8px;
         aspect-ratio: 1;
     }
 
-    week-slot:hover > week {
+    /* week-slot:hover > week {
         transform: scale(1.5);
-    }
+    } */
 
 </style>
