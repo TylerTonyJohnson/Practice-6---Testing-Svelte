@@ -23,7 +23,7 @@
         flex: 1;
         left: 4px;
         top: 4px;
-        margin: 8px;
+        margin: 10%;
         display: inline-block;
         border: solid black 1px;
         background-color: gray;
@@ -31,8 +31,8 @@
         aspect-ratio: 1;
     }
 
-    /* week-slot:hover > week {
-        transform: scale(1.5);
-    } */
+    week-slot:hover > week {
+        filter: brightness(1.5);
+    }
 
 </style>
