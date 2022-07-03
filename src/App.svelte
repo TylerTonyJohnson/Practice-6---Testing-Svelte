@@ -13,6 +13,10 @@
 
 
 <style>
+	:global(*, *::before, *::after) {
+		box-sizing: border-box;
+	}
+
 	main {
 		text-align: center;
 		padding: 1em;

@@ -1,6 +1,6 @@
 <script>
     export let id;
-
+    export let color = "gray";
     const handleMouseEnter = () => {
         console.log(id);
     }
@@ -8,7 +8,7 @@
 </script>
 
 <week-slot on:mouseenter={handleMouseEnter}>
-    <week {id}/>
+    <week id={id} style="--color: {color}"/>
 </week-slot>
 
 
@@ -16,18 +16,19 @@
     week-slot {
         position: relative;
         display: flex;
-        border: solid red 1px;
+        /* border: solid red 1px; */
     }
 
     week {
+        --color: none;
         flex: 1;
-        left: 4px;
-        top: 4px;
-        margin: 10%;
-        display: inline-block;
+        /* left: 4px; */
+        /* top: 4px; */
+        /* margin: 10%; */
+        /* display: inline-block; */
         border: solid black 1px;
-        background-color: gray;
-        border-radius: 8px;
+        background-color: var(--color);
+        /* border-radius: 50%; */
         aspect-ratio: 1;
     }
 
