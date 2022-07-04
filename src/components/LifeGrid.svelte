@@ -31,8 +31,16 @@
                 <Week id={id + 1} color={color}/>
             {/each}
         </lifeGrid>
-        <RibbonLabel length={gridWidth} location="month-label"></RibbonLabel>
-        <RibbonLabel length={gridHeight} location="year-label"></RibbonLabel>
+        <RibbonLabel 
+            length={gridWidth} 
+            location="month-label"
+            orientation="horizontal">
+        </RibbonLabel>
+        <RibbonLabel 
+            length={gridHeight} 
+            location="year-label"
+            orientation="vertical"
+        ></RibbonLabel>
     </gridContainer>
 </main>
 

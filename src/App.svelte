@@ -17,6 +17,12 @@
 		box-sizing: border-box;
 	}
 
+	:global(body::-webkit-scrollbar) {
+		display: none;
+	}
+
+	
+
 	main {
 		text-align: center;
 		padding: 1em;
