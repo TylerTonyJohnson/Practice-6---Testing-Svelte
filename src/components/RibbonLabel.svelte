@@ -31,6 +31,7 @@
 <style>
     main {
         display: grid;
+        font-size: x-small;
         /* grid-auto-flow: column ; */
         /* justify-content: center;
         align-items: center; */
