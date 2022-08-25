@@ -7,7 +7,9 @@
 
 </script>
 
-<week-slot on:mouseenter={handleMouseEnter}>
+<week-slot on:mouseenter={handleMouseEnter}
+    on:dragstart|preventDefault="{e => alert(e)}"
+>
     <week id={id} style="--color: {color}"/>
 </week-slot>
 
